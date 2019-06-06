@@ -14,10 +14,10 @@ import javax.xml.transform.stream.StreamResult;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
-public class XML_Wirte {
+public class XML_wirte {
     private String Name, Url;
 
-    public XML_Wirte(String name, String url) {
+    public XML_wirte(String name, String url) {
         this.Name = name;
         this.Url = url;
     }
@@ -39,7 +39,7 @@ public class XML_Wirte {
             Red_List.appendChild(v_List);
 
             // 속성값 정의 (id:1)
-            v_List.setAttribute("id", String.valueOf(Num));
+            //v_List.setAttribute("id", String.valueOf(Num));
 
             // name 엘리먼트
             Element name = doc.createElement("name");
@@ -50,10 +50,6 @@ public class XML_Wirte {
             Element writer = doc.createElement("writer");
             writer.appendChild(doc.createTextNode(Url));
             v_List.appendChild(writer);
-
-
-            v_List = doc.createElement("v_List");
-            Red_List.appendChild(v_List);
 
 
             // XML 파일로 쓰기
@@ -67,7 +63,6 @@ public class XML_Wirte {
 
             DOMSource source = new DOMSource(doc);
             StreamResult result = new StreamResult(new FileOutputStream(new File("Red_List.xml")));
-
             transformer.transform(source, result);
 
         }
