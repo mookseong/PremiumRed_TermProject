@@ -1,5 +1,7 @@
-import Data.XML_Reading;
-import Data.XML_wirte;
+package com.Mookseong.examples.Red_TermProject;
+
+import com.Mookseong.examples.Red_TermProject.Data.XML_Reading;
+import com.Mookseong.examples.Red_TermProject.Data.XML_wirte;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -44,7 +46,7 @@ public class Main_gui extends Application {
     }
 
     private void XML_Setting()throws IOException{
-        Parent root = FXMLLoader.load(getClass().getResource("GUI/sample.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/sample.fxml"));
         primaryStage.setTitle("Red");
         primaryStage.setScene(new Scene(root, 433, 520));
         primaryStage.show();
