@@ -13,7 +13,7 @@ class MP3Demo {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("1.순차재생 2.랜덤 재생 3.전체반복");//GUI 연결전에 실험을 위해서 설정함
+        System.out.println("1.순차재생 2.랜덤 재생 3.전체반복");//GUI 연결전에 실험을 위해서 설정
         int mode = sc.nextInt();
 
         try{
