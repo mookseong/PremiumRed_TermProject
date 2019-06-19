@@ -27,7 +27,9 @@ public class XML_Reading {
 
         for(int i=0; i<descNodes.getLength();i++){
 
-            for(Node node = descNodes.item(i).getFirstChild(); node!=null; node=node.getNextSibling()){
+            for(Node node = descNodes.item(i).getFirstChild();
+                node!=null;
+                node=node.getNextSibling()){
                 //첫번째 자식을 시작으로 마지막까지 다음 형제를 실행
 
                 if(node.getNodeName().equals("name")){
@@ -35,9 +37,7 @@ public class XML_Reading {
                 }else if(node.getNodeName().equals("writer")){
                     System.out.println(node.getTextContent());
                 }
-
             }
-
         }
     }
 

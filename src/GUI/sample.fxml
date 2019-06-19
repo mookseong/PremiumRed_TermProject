@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="100.0" prefHeight="520.0" prefWidth="433.0" vgap="100.0" xmlns="http://javafx.com/javafx/8.0.999-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Controller">
+    <AnchorPane prefHeight="520.0" prefWidth="434.0">
+        <ImageView fitHeight="236.0" fitWidth="249.0" layoutX="92.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="227.0" AnchorPane.leftAnchor="92.0" AnchorPane.rightAnchor="92.0" AnchorPane.topAnchor="57.0" />
+        <Label id="TitleText" fx:id="Title" alignment="CENTER" layoutX="89.0" layoutY="331.0" nodeOrientation="LEFT_TO_RIGHT" text="TitleText" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" AnchorPane.bottomAnchor="192.0" AnchorPane.leftAnchor="89.0" AnchorPane.rightAnchor="111.0" AnchorPane.topAnchor="331.0">
+            <font>
+                <Font name="Lato Regular" size="15.0" />
+            </font>
+        </Label>
+        <ImageView id="Play" fx:id="Play_Btn" fitHeight="55.0" fitWidth="51.0" layoutX="206.0" layoutY="396.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="91.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="396.0">
+            <Image url="@../Img/play.png" />
+        </ImageView>
+        <ImageView id="back_btn" fitHeight="40.0" fitWidth="60.0" layoutX="112.0" layoutY="404.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="91.0" AnchorPane.leftAnchor="112.0" AnchorPane.rightAnchor="283.0" AnchorPane.topAnchor="404.0">
+            <Image url="@../Img/back.png" />
+        </ImageView>
+        <ImageView id="Next_btn" fitHeight="40.0" fitWidth="60.0" layoutX="283.0" layoutY="404.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="91.0" AnchorPane.leftAnchor="283.0" AnchorPane.rightAnchor="112.0" AnchorPane.topAnchor="404.0">
+            <Image url="@../Img/next.png" />
+        </ImageView>
+    </AnchorPane>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

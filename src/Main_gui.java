@@ -8,8 +8,11 @@ import javafx.stage.Stage;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main_gui extends Application {
+    List song = new ArrayList();
 
     private Stage primaryStage;
 
@@ -19,11 +22,12 @@ public class Main_gui extends Application {
         // 파일 존재 여부 판단
         if (!file.isFile()) {
             XML_wirte XML_Wirte = new XML_wirte("test","test");
-            XML_Wirte.Wirte(1);
+            XML_Wirte.Wirte();
         }else {
             XML_Reading XML_Reading = new XML_Reading("");
             XML_Reading.start();
         }
+
 
         launch(args);
     }
@@ -42,7 +46,7 @@ public class Main_gui extends Application {
     private void XML_Setting()throws IOException{
         Parent root = FXMLLoader.load(getClass().getResource("GUI/sample.fxml"));
         primaryStage.setTitle("Red");
-        primaryStage.setScene(new Scene(root, 234, 320));
+        primaryStage.setScene(new Scene(root, 433, 520));
         primaryStage.show();
     }
 }

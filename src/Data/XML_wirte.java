@@ -22,7 +22,7 @@ public class XML_wirte {
         this.Url = url;
     }
 
-    public void Wirte(int Num) {
+    public void Wirte() {
         try {
             DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
