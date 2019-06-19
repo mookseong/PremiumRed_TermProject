@@ -18,7 +18,7 @@
             </font>
         </Label>
         <ImageView id="Play" fx:id="Play_Btn" fitHeight="55.0" fitWidth="51.0" layoutX="206.0" layoutY="396.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="91.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="396.0">
-            <Image url="@../Img/play.png" />
+            <Image url="@../Img/Pause.png" />
         </ImageView>
         <ImageView id="back_btn" fitHeight="40.0" fitWidth="60.0" layoutX="112.0" layoutY="404.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="91.0" AnchorPane.leftAnchor="112.0" AnchorPane.rightAnchor="283.0" AnchorPane.topAnchor="404.0">
             <Image url="@../Img/back.png" />
