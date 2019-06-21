@@ -1,5 +1,6 @@
 package com.Mookseong.examples.Red_TermProject;
 
+import com.sun.xml.internal.bind.v2.TODO;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.event.EventHandler;
@@ -36,6 +37,8 @@ public class Controller implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         Title.setText("음악을 재생해주시기 바랍니다.");
         Play_Btn.setOnMouseClicked((EventHandler<Event>) Evnet -> Controller.this.handlePlay());
+        back_Btn.setOnMouseClicked((EventHandler<Event>) Evnet -> Controller.this.handleback());
+        next_Btn.setOnMouseClicked((EventHandler<Event>) Evnet -> Controller.this.handlenext());
 
 
         list.setOnAction(event -> {
@@ -88,6 +91,21 @@ public class Controller implements Initializable {
             System.out.println("노래를 재생합니다.");
             PlayImg = true;
         }
+    }
+    private boolean backb = true;
+    private void handleback(){
+        if(backb) {
+            System.out.println("처음 재생합니다.");
+            PlayImg = false;
+        }else {
+            System.out.println("이전곡 재생합니다.");
+            PlayImg = true;
+
+        }
+
+    }
+    private void handlenext(){
+        System.out.println("다음곡 재생합니다.");
     }
     // ex: http://www.youtube.com/watch?v=Nj6PFaDmp6c
     // ex: "/Users/limseongmuk/Downloads"
