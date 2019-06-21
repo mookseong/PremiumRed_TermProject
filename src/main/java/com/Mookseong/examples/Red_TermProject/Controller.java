@@ -37,42 +37,42 @@ public class Controller implements Initializable {
         Title.setText("음악을 재생해주시기 바랍니다.");
         Play_Btn.setOnMouseClicked((EventHandler<Event>) Evnet -> Controller.this.handlePlay());
 
-//
-//        list.setOnAction(event -> {
-//            if(popup.isShowing()){
-//                popup.hide();
-//            }else {
-//                final Window window = list.getScene().getWindow();
-//                popup.setWidth(100);
-//                popup.setHeight(300);
-//
-//                final double x = window.getX()
-//                        + list.localToScene(0, 0).getX()
-//                        + list.getScene().getX()
-//                        ;
-//                final double y = window.getY()
-//                        + list.localToScene(0, 0).getY()
-//                        + list.getScene().getY()
-//                        + list.getHeight();
-//
-//                popup.getContent().clear();
-//                popup.show(window, x, y);
-//            }
 
-//
-//                try {
-//                    Parent root = FXMLLoader.load(getClass().getResource("/fxml/Download.fxml"));
-//                    Stage stage = new Stage();
-//                    stage.setTitle("My New Stage Title");
-//                    stage.setScene(new Scene(root, 450, 450));
-//                    stage.show();
-//                    // Hide this current window (if this is what you want)
-//                    ((Node)(event.getSource())).getScene().getWindow().hide();
-//                }
-//                catch (IOException e) {
-//                    e.printStackTrace();
-//                }
-//        });
+        list.setOnAction(event -> {
+            if(popup.isShowing()){
+                popup.hide();
+            }else {
+                final Window window = list.getScene().getWindow();
+                popup.setWidth(100);
+                popup.setHeight(300);
+
+                final double x = window.getX()
+                        + list.localToScene(0, 0).getX()
+                        + list.getScene().getX()
+                        ;
+                final double y = window.getY()
+                        + list.localToScene(0, 0).getY()
+                        + list.getScene().getY()
+                        + list.getHeight();
+
+                popup.getContent().clear();
+                popup.show(window, x, y);
+            }
+
+
+                try {
+                    Parent root = FXMLLoader.load(getClass().getResource("/fxml/Download.fxml"));
+                    Stage stage = new Stage();
+                    stage.setTitle("My New Stage Title");
+                    stage.setScene(new Scene(root, 450, 450));
+                    stage.show();
+                    // Hide this current window (if this is what you want)
+                    ((Node)(event.getSource())).getScene().getWindow().hide();
+                }
+                catch (IOException e) {
+                    e.printStackTrace();
+                }
+        });
 
     }
 

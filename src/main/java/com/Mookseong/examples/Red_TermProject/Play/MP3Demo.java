@@ -19,27 +19,25 @@ class MP3Demo {
         try{
             File mtDir = new File("./mp3");
             File[] contents =  mtDir.listFiles();
-            for (int i=0; i<contents.length; i++) {
-                if (contents[i].isFile()) {
-                    if(mode==1) {//일반재생
-                        Player playMp3 = new Player(new FileInputStream(contents[i]));
-                        while(!PlayImg) {//스레드 이용해서 정지
+            for (File content : contents) {
+                if (content.isFile()) {
+                    if (mode == 1) {//일반재생
+                        Player playMp3 = new Player(new FileInputStream(content));
+                        while (!PlayImg) {//스레드 이용해서 정지
                             Thread.sleep(1000);
                         }
                         playMp3.play();
-                    }
-                    else if(mode==2) {//랜덤값재생
+                    } else if (mode == 2) {//랜덤값재생
                         Random R = new Random();
                         Player playMp3 = new Player(new FileInputStream(contents[R.nextInt(contents.length)]));
-                        while(!PlayImg) {//스레드 이용해서 정지
+                        while (!PlayImg) {//스레드 이용해서 정지
                             Thread.sleep(1000);
                         }
                         playMp3.play();
-                    }
-                    else {//전체반복
-                        while(mode==3) {
-                            Player playMp3 = new Player(new FileInputStream(contents[i]));
-                            while(!PlayImg) {
+                    } else {//전체반복
+                        while (mode == 3) {
+                            Player playMp3 = new Player(new FileInputStream(content));
+                            while (!PlayImg) {
                                 Thread.sleep(1000);
                             }
                             playMp3.play();
