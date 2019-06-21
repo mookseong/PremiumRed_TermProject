@@ -40,7 +40,6 @@ public class Main_gui extends Application {
     @Override
     public void start(Stage primaryStage){
         this.primaryStage = primaryStage;
-
         try {
             XML_Setting();
         } catch (IOException e) {
