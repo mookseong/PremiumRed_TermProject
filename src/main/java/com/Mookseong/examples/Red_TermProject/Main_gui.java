@@ -1,7 +1,9 @@
 package com.Mookseong.examples.Red_TermProject;
 
+
 import com.Mookseong.examples.Red_TermProject.Data.XML_Reading;
 import com.Mookseong.examples.Red_TermProject.Data.XML_wirte;
+import com.github.axet.vget.VGet;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -10,6 +12,7 @@ import javafx.stage.Stage;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,7 +26,7 @@ public class Main_gui extends Application {
 
         // 파일 존재 여부 판단
         if (!file.isFile()) {
-            XML_wirte XML_Wirte = new XML_wirte("test","test");
+            XML_wirte XML_Wirte = new XML_wirte("Earth","null");
             XML_Wirte.Wirte();
         }else {
             XML_Reading XML_Reading = new XML_Reading("");
@@ -45,10 +48,12 @@ public class Main_gui extends Application {
         }
     }
 
+
     private void XML_Setting()throws IOException{
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/sample.fxml"));
         primaryStage.setTitle("Red");
         primaryStage.setScene(new Scene(root, 433, 520));
         primaryStage.show();
     }
+
 }

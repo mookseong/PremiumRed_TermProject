@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="434.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Mookseong.examples.Red_TermProject.Youtube.Youtube_DownLoader">
+   <children>
+      <Label layoutX="42.0" layoutY="36.0" text="Youtube url">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="42.0" layoutY="69.0" prefHeight="27.0" prefWidth="328.0" />
+      <TextField layoutX="42.0" layoutY="146.0" prefHeight="27.0" prefWidth="328.0" />
+      <Label layoutX="42.0" layoutY="115.0" text="File name(Option)">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ProgressBar layoutX="41.0" layoutY="219.0" prefHeight="20.0" prefWidth="328.0" progress="0.0" />
+      <Button layoutX="178.0" layoutY="301.0" mnemonicParsing="false" text="Download" />
+   </children>
+</AnchorPane>
